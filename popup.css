@@ -1,0 +1,100 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 480px;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 16px;
+    border-bottom: 1px solid #0d47a1;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.controls {
+    padding: 10px 16px;
+    background-color: #f0f8ff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0d47a1;
+}
+
+#log-output {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(600px - 150px);
+    /* Adjust based on other elements' height */
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px 16px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#log-output .empty-state {
+    color: #888;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.log-entry {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.log-entry .timestamp {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.log-entry .role {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.log-entry .content {
+    white-space: pre-wrap;
+    /* Important for preserving formatting */
+}
